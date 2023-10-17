@@ -4,6 +4,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import home from '/components/home.js';
+import maps from '/components/maps.js';
+import orders from '/components/orders.js';
+import account from '/components/account.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +17,13 @@ export default function App() {
         <Stack.Screen
           name="Home"
           component={home}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="Maps"
+          component={maps}
           options={{
             headerShown: false,
           }}
