@@ -35,6 +35,13 @@ export default function App() {
             headerShown: false,
           }}
         />
+        <Stack.Screen
+          name="Account"
+          component={account}
+          options={{
+            headerShown: false,
+          }}
+        />
         
       </Stack.Navigator>
     </NavigationContainer>
